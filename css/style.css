@@ -118,6 +118,18 @@ nav ul li a:hover {
 
 /*---------------------HOME---------------------*/
 
+.home {
+	display: flex;
+	background-color: rgb(25, 25, 25);
+}
+
+.home img {
+	border-radius: 8px;
+	box-shadow: 0 0 0.15em rgb(0 0 0);
+	width: 500px;
+	height: 290px;
+}
+
 .home svg {
 	width: 100%;
 }
