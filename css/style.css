@@ -67,7 +67,8 @@ body {
     background: rgb(25, 25, 25);
     display: flex;
     align-items: center;
-    padding: 6.2% 13% 6.2% 13%;
+    padding: 6.2% 13% 5% 13%;
+	justify-content: space-between;
 }
 
 .header img {
@@ -77,10 +78,12 @@ body {
 
 nav ul {
     display: flex;
+	width: 100%;
+	flex-wrap: wrap;
 }
 
 nav ul li {
-    margin: auto 25px auto 25px;
+    margin: auto 20px auto 20px;
     font-size: 17px;
     letter-spacing: 1px;
 }
