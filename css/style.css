@@ -21,7 +21,7 @@ html, body {
 }
 
 body {
-	background-color: rgb(25, 25, 25);
+	background-color: rgb(30, 30, 30);
 }
 
 /*-----------------------------------------------*/
@@ -64,9 +64,49 @@ body {
 /*---------------------HEADER---------------------*/
 
 .header {
-	background-color: rgb(25, 25, 25);
-	padding: 5%;
+	/*background-color: rgb(25, 25, 25);*/
+	background-color: orange;
+	padding: 4.5% 12%;
 	display: flex;
+	align-items: center;
+}
+
+.header img {
+	width: 75px;
+	height: 75px;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    margin: auto 0 auto 0;
+    white-space: nowrap;
+    font-size: 17px;
+    letter-spacing: .5px;
+}
+
+nav ul li a {
+    color: rgb(166, 161, 196);
+	transition: all 0.4s;
+}
+
+nav ul li a:hover {
+	color: rgb(222, 221, 235);;
+	transition: all 0.4s;
+}
+
+nav ul li .dashboard-btn {
+	background-color: rgb(238, 242, 247);
+	color: black;
+	border-radius: 14px;
+	padding: 2px 17px;
+}
+
+nav ul li .dashboard-btn:hover {
+	color: black;
+	background-color: rgb(166, 161, 196);
 }
 
 /*---------------------HEADER---------------------*/
