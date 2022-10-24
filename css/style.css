@@ -64,8 +64,7 @@ body {
 /*---------------------HEADER---------------------*/
 
 .header {
-	/*background-color: rgb(25, 25, 25);*/
-	background-color: orange;
+	background-color: rgb(25, 25, 25);
 	padding: 4.5% 12%;
 	display: flex;
 	align-items: center;
@@ -107,6 +106,14 @@ nav ul li .dashboard-btn {
 nav ul li .dashboard-btn:hover {
 	color: black;
 	background-color: rgb(166, 161, 196);
+}
+
+.h-features, .h-pricing, .h-faq {
+	margin-left: 36px;
+}
+
+.h-features {
+	margin-left: 250px;
 }
 
 /*---------------------HEADER---------------------*/
