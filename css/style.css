@@ -339,6 +339,36 @@ nav ul li a:hover {
 
 /*---------------------FAQ---------------------*/
 
+/*---------------------FOOTER---------------------*/
+
+.line {
+    background-color: rgb(82, 41, 163);
+    width: 82%;
+    height: 1px;
+    margin-left: 9%;
+}
+
+.footer-box {
+    background-color: rgb(35, 35, 35);
+    padding: 2% 9%;
+}
+
+.footer-box p {
+    color: #ffe8e3;
+    font-size: 14px;
+}
+
+.footer-box .mr {
+    margin-top: 5px;
+}
+
+.footer-box a {
+    color: rgb(151, 139, 255);
+    transition: all 0.5s;
+}
+
+/*---------------------FOOTER---------------------*/
+
 /*----------------------------------------------*/
 
 @media screen and (max-width: 1200px) {
@@ -389,6 +419,9 @@ nav ul li a:hover {
 		padding: 5px 7px;
 		font-size: 8px;
 	}
+	.footer-box p {
+        font-size: 13px;
+    }
 }
 
 @media screen and (max-width: 880px) {
@@ -480,6 +513,12 @@ nav ul li a:hover {
 	.features-box1 p, .features-box2 p {
 		font-size: 15px;
 	}
+	.footer-box {
+		padding: 5% 9%;
+	}
+	.footer-box p {
+		font-size: 12px;
+	}
 }
 
 @media screen and (max-width: 450px) {
@@ -498,6 +537,9 @@ nav ul li a:hover {
 	}
 	.faq-box1 h1, .faq-box2 h1 {
 		font-size: 17px;
+	}
+	.footer-box p {
+		font-size: 11px;
 	}
 }
 
@@ -518,6 +560,9 @@ nav ul li a:hover {
 	}
 	.faq-box1 h1, .faq-box2 h1 {
 		font-size: 15px;
+	}
+	.footer-box p {
+		font-size: 9.5px;
 	}
 }
 
@@ -550,5 +595,8 @@ nav ul li a:hover {
 	}
 	.faq-box1 h1, .faq-box2 h1 {
 		font-size: 13px;
+	}
+	.footer-box p {
+		font-size: 7.8px;
 	}
 }
