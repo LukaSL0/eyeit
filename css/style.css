@@ -288,6 +288,57 @@ nav ul li a:hover {
 
 /*---------------------STATS---------------------*/
 
+/*---------------------FAQ---------------------*/
+
+.faq {
+	padding: 4% 10% 7% 10%;
+}
+
+.faq-h {
+	display: block;
+	text-align: center;
+}
+
+.faq-h i {
+	color: rgb(82, 41, 163);
+	font-size: 31px;
+	margin-bottom: 10px;
+}
+
+.faq-h h1 {
+	color: white;
+	letter-spacing: 1px;
+	margin-bottom: 40px;
+}
+
+.faq-box1 {
+	margin-bottom: 45px;
+}
+
+.faq-box1, .faq-box2 {
+	display: flex;
+	justify-content: space-between;
+}
+
+.faq-box1 i, .faq-box2 i {
+	color: rgb(82, 41, 163);
+	font-size: 21px;
+}
+
+.faq-box1 h1, .faq-box2 h1 {
+	color: #919ca7;
+	font-size: 20px;
+}
+
+.faq-box1 p, .faq-box2 p {
+	color: #919ca7;
+	font-size: 16px;
+	font-weight: lighter;
+	max-width: 450px;
+}
+
+/*---------------------FAQ---------------------*/
+
 /*----------------------------------------------*/
 
 @media screen and (max-width: 1200px) {
@@ -299,6 +350,9 @@ nav ul li a:hover {
 	}
 	.features-box1 p, .features-box2 p {
 		max-width: 280px;
+	}
+	.faq {
+		padding: 4% 3%;
 	}
 }
 
@@ -324,6 +378,9 @@ nav ul li a:hover {
 	}
 	.features-box1 p, .features-box2 p {
 		max-width: 250px;
+	}
+	.faq-box1 p, .faq-box2 p {
+		max-width: 400px;
 	}
 }
 
@@ -395,6 +452,24 @@ nav ul li a:hover {
 	.stats-inf i {
 		margin-top: 35px;
 	}
+	.faq-h h1 {
+		margin-bottom: 30px;
+	}
+	.faq-box1 {
+		margin-bottom: 0;
+	}
+	.faq-box1, .faq-box2 {
+		display: block;
+		text-align: center;
+	}
+	.faq-box1 h1, .faq-box2 h1 {
+		margin-bottom: 7px;
+	}
+	.faq-box1 p, .faq-box2 p {
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 35px;
+	}
 }
 
 @media screen and (max-width: 600px) {
@@ -412,12 +487,37 @@ nav ul li a:hover {
 		width: 370px;
 		height: 215px;
 	}
+	.faq-box1 p, .faq-box2 p {
+		max-width: 350px;
+	}
+	.faq-box1 p, .faq-box2 p {
+		font-size: 15px;
+	}
+	.faq-box1 i, .faq-box2 i {
+		font-size: 19px;
+	}
+	.faq-box1 h1, .faq-box2 h1 {
+		font-size: 17px;
+	}
 }
 
 @media screen and (max-width: 400px) {
 	.home img {
 		width: 330px;
 		height: 191px;
+	}
+	.faq-h h1 {
+		font-size: 19px;
+	}
+	.faq-box1 p, .faq-box2 p {
+		font-size: 13px;
+		max-width: 300px;
+	}
+	.faq-box1 i, .faq-box2 i {
+		font-size: 17px;
+	}
+	.faq-box1 h1, .faq-box2 h1 {
+		font-size: 15px;
 	}
 }
 
@@ -437,5 +537,18 @@ nav ul li a:hover {
 	}
 	.stats-inf h1 {
 		font-size: 20px;
+	}
+	.faq-h h1 {
+		font-size: 16px;
+	}
+	.faq-box1 p, .faq-box2 p {
+		font-size: 12px;
+		max-width: 260px;
+	}
+	.faq-box1 i, .faq-box2 i {
+		font-size: 16px;
+	}
+	.faq-box1 h1, .faq-box2 h1 {
+		font-size: 13px;
 	}
 }
