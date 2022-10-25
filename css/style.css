@@ -67,7 +67,7 @@ body {
     background: rgb(25, 25, 25);
     display: flex;
     align-items: center;
-    padding: 6.2% 13% 5% 13%;
+    padding: 6.2% 13% 6.2% 13%;
 	justify-content: space-between;
 }
 
@@ -121,6 +121,12 @@ nav ul li a:hover {
 .home {
 	display: flex;
 	background-color: rgb(25, 25, 25);
+	padding: 0 13%;
+}
+
+.box1 {
+	width: 100%;
+	margin-top: 35px;
 }
 
 .home img {
@@ -128,6 +134,39 @@ nav ul li a:hover {
 	box-shadow: 0 0 0.15em rgb(0 0 0);
 	width: 500px;
 	height: 290px;
+}
+
+.home h1 {
+	font-size: 48px;
+	font-weight: lighter;
+	color: rgb(82, 41, 163);
+}
+
+.home p {
+	max-width: 370px;
+	color: rgb(207, 207, 207);
+	margin: 20px 0;
+	font-size: 17px;
+}
+
+.home a {
+	color: rgb(82, 41, 163);
+	border: solid 1px rgb(82, 41, 163);
+	transition: all 0.3s;
+	padding: 7px 12px;
+	border-radius: 4px;
+	margin-right: 5px;
+}
+
+.home a:hover {
+	background-color: rgb(82, 41, 163);
+	transition: all 0.3s;
+	color: white;
+}
+
+.home .eyeit-btn {
+	color: white;
+	background-color: rgb(82, 41, 163);
 }
 
 .home svg {
@@ -138,11 +177,45 @@ nav ul li a:hover {
 
 /*----------------------------------------------*/
 
+@media screen and (max-width: 1200px) {
+	.home p {
+		max-width: 300px;
+	}
+}
+
+@media screen and (max-width: 1100px) {
+	.home p {
+		max-width: 250px;
+	}
+}
+
+@media screen and (max-width: 1010px) {
+	.home h1 {
+		font-size: 38px;
+	}
+	.home p {
+		font-size: 13px;
+		padding-right: 15px;
+	}
+	.home a {
+		font-size: 12px;
+	}
+}
+
+@media screen and (max-width: 945px) {
+	.home a {
+		font-size: 7.7px;
+	}
+}
+
 @media screen and (max-width: 880px) {
     .header {
 		display: block;
-        padding: 1rem 5%;
+        padding: 5% 5%;
     }
+	.box1 {
+		padding: 0 13%;
+	}
     .header img {
 		display: block;
 		margin-left: auto;
@@ -151,4 +224,62 @@ nav ul li a:hover {
     nav ul li {
         display: none;
     }
+	.home {
+		display: block;
+		padding: 0;
+	}
+	.home img {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.home h1 {
+		font-size: 38px;
+		text-align: center;
+	}
+	.home p {
+		text-align: center;
+		max-width: none;
+	}
+	.home a {
+		font-size: 12px;
+	}
+	.box1 {
+		margin-top: 0;
+	}
+	.box2 {
+		margin-top: 50px;
+		padding-bottom: 30px;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.home img {
+		width: 430px;
+		height: 250px;
+	}
+}
+
+@media screen and (max-width: 450px) {
+	.home img {
+		width: 370px;
+		height: 215px;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.home img {
+		width: 330px;
+		height: 190px;
+	}
+}
+
+@media screen and (max-width: 345px) { /*Glaxy Fold or smaller*/
+	.home img {
+		width: 265px;
+		height: 152.5px;
+	}
+	.home a {
+		font-size: 12.5px;
+	}
 }
