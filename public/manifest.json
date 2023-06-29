@@ -8,9 +8,9 @@
       "type": "image/x-icon"
     },
     {
-      "src": "./assets/icon.png",
+      "src": "./assets/scanner.webp",
       "type": "image/png",
-      "sizes": "192x192"
+      "sizes": "500x290 430x250 370x215 330x191 265x152.5"
     }
   ],
   "start_url": ".",
