@@ -14,7 +14,7 @@ export default function Features() {
                     <FeaturesLayout
                         icon="fas fa-user-secret"
                         feature="Detections"
-                        desc="We have the biggest quantity of detections as possible, mainly detecting the most famous and paid cheats."
+                        desc="We have the most detections as possible, mainly detecting the most famous and paid cheats."
                     />
                     <FeaturesLayout
                         icon="fas fa-shield-alt"
@@ -36,7 +36,7 @@ export default function Features() {
                     <FeaturesLayout
                         icon="fas fa-stopwatch"
                         feature="Efficiency"
-                        desc="A scan can take from ~10 to ~40 seconds depending how fast is your computer."
+                        desc="A scan can take from ~30 to ~40 seconds depending how fast is the computer."
                     />
                     <FeaturesLayout
                         icon="fas fa-calendar-check"
