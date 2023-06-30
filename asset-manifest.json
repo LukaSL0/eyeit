@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/eyeit/static/css/main.67408930.css",
-    "main.js": "/eyeit/static/js/main.950c343a.js",
+    "main.js": "/eyeit/static/js/main.15304b30.js",
     "index.html": "/eyeit/index.html",
     "main.67408930.css.map": "/eyeit/static/css/main.67408930.css.map",
-    "main.950c343a.js.map": "/eyeit/static/js/main.950c343a.js.map"
+    "main.15304b30.js.map": "/eyeit/static/js/main.15304b30.js.map"
   },
   "entrypoints": [
     "static/css/main.67408930.css",
-    "static/js/main.950c343a.js"
+    "static/js/main.15304b30.js"
   ]
 }
