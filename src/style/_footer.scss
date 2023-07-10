@@ -1,0 +1,19 @@
+.footer {
+    background-color: rgb(35, 35, 35);
+    padding: 2% 9%;
+    @include responsive(600px) { padding: 5% 9%; }
+
+    &__direitos {
+        p {
+            color: #ffe8e3;
+            @include fontSize(8px, 15px, 345px, 1920px)
+        }
+        p.info {
+            margin-top: 5px;
+        }
+        a {
+            color: rgb(151, 139, 255);
+            transition: all 0.5s;
+        }
+    }
+}

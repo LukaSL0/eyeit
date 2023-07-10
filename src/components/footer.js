@@ -1,12 +1,10 @@
-import '../style/footer.css';
-
 export default function Footer() {
     return (
-        <section className="footer-box">
+        <section className="footer">
             <footer>
-                <div className="direitos">
+                <div className="footer__direitos">
                     <p>© Copyright 2022 Luka de Souza. Todos os direitos reservados.</p>
-                    <p className="mr">Design & Coding by <a href="mailto:lukasouza77@gmail.com">lukasouza77@gmail.com</a></p>
+                    <p className="info">Design & Coding by <a href="mailto:lukasouza77@gmail.com">lukasouza77@gmail.com</a></p>
                 </div>
             </footer>
         </section>

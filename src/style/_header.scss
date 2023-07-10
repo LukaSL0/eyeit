@@ -1,0 +1,56 @@
+.header {
+    background: rgb(25, 25, 25);
+    display: flex;
+    align-items: center;
+    padding: 6.2% 13% 6.2% 13%;
+	justify-content: space-between;
+    @include responsive(880px) {
+        display: block;
+        padding: 5% 5%;
+    }
+
+    img {
+        width: 75px;
+        height: 43px;
+        @include responsive(880px) {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+    nav ul {
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    nav ul li {
+        margin: auto 20px auto 20px;
+        font-size: 17px;
+        letter-spacing: 1px;
+        @include responsive(880px) {
+            display: none;
+        }
+    }
+    nav ul li a {
+        transition: all 0.4s;
+        color: rgb(166, 161, 196);
+        &:hover {
+            transition: all 0.4s;
+            color: rgb(222, 221, 235);;
+        }
+    }
+    nav ul li a.dash-btn {
+        background-color: rgb(238, 242, 247);
+        padding: 2px 17px;
+        color: white;
+        border-radius: 14px;
+        transition: all 0.4s;
+        font-size: 16px;
+        color: black;
+        &:hover {
+            color: black;
+            background-color: rgb(166, 161, 196);
+            transition: all 0.4s;
+        }
+    }
+}
