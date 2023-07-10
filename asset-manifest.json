@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.css": "/eyeit/static/css/main.4738c282.css",
-    "main.js": "/eyeit/static/js/main.1bbcdf39.js",
+    "main.css": "/eyeit/static/css/main.18085634.css",
+    "main.js": "/eyeit/static/js/main.ddb0d957.js",
     "index.html": "/eyeit/index.html"
   },
   "entrypoints": [
-    "static/css/main.4738c282.css",
-    "static/js/main.1bbcdf39.js"
+    "static/css/main.18085634.css",
+    "static/js/main.ddb0d957.js"
   ]
 }
