@@ -1,6 +1,6 @@
 # eyeit
 
-Linguagens: HTML / CSS / JS
+Linguagens: HTML / CSS (SASS) / JS
 Framework: React JS
 
 Projeto feito para cliente autônomo, algumas modificações foram feitas para preservar os dados pessoais do cliente e seu projeto original. (O Projeto original não segue sendo utilizado)
