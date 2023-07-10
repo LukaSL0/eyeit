@@ -1,0 +1,53 @@
+.features {
+	padding: 0 10% 4% 10%;
+	@include responsive(1200px) { padding: 0 5% 4% 5%; }
+
+	&__header {
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+
+		i {
+			color: rgb(82, 41, 163);
+			font-size: 30px;
+		}
+		h1 {
+			color: white;
+			font-weight: bold;
+			letter-spacing: 1px;
+			font-size: 25px;
+		}
+	}
+
+	&__box {
+		display: flex;
+		text-align: center;
+		justify-content: space-between;
+		margin-top: 50px;
+		margin-bottom: 40px;
+		@include responsive(880px) { margin-bottom: 0; display: block; };
+
+		i {
+			color: rgb(82, 41, 163);
+			font-size: 21px;
+			border-radius: 50%;
+			width: 50px;
+			height: 50px;
+			background-color: rgba(82, 41, 163, 0.3);
+			padding-top: 14px;
+		}
+		h1 {
+			margin: 10px 0;
+			color: rgb(230, 230, 230);
+			@include fontSize(24px, 32px, 345px, 1920px);
+		}
+		p {
+			max-width: 310px;
+			color: rgb(170, 170, 170);
+			@include fontSize(14px, 17px, 345px, 1920px);
+			@include responsive(1200px) { max-width: 280px; };
+			@include responsive(1010px) { max-width: 250px; };
+			@include responsive(880px) { margin: 0 auto 50px auto; };
+		}
+	}
+}

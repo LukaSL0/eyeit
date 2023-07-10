@@ -1,3 +1,5 @@
+@use "sass:math";
+
 @mixin responsive($size) {
     @media screen and (max-width: $size) {
         @content;
@@ -6,7 +8,7 @@
 
 @mixin fontSize($min-font-size: 12px, $max-font-size: 31px, $lower-range: 340px, $upper-range: 1920px) {
 
-    font-size: calc(#{$min-font-size} + #{(($max-font-size / ($max-font-size * 0 + 1)) - ($min-font-size / ($min-font-size * 0 + 1)))} * ( (100vw - #{$lower-range}) / #{(($upper-range / ($upper-range * 0 + 1)) - ($lower-range / ($lower-range * 0 + 1)))}));
+    font-size: calc(#{$min-font-size} + #{(math.div($max-font-size, ($max-font-size * 0 + 1)) - math.div($min-font-size, ($min-font-size * 0 + 1)))} * ( (100vw - #{$lower-range}) / #{(math.div($upper-range, ($upper-range * 0 + 1)) - math.div($lower-range, ($lower-range * 0 + 1)))}));
     
     @media screen and (max-width: $lower-range) {
       font-size: $min-font-size;
@@ -16,4 +18,4 @@
     }
 }
 
-@import 'faq';
+@import 'faq', 'features';
