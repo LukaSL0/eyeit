@@ -1,22 +1,35 @@
-.faq {
+@mixin responsive-font-size($max-width, $min-font-size, $max-font-size) {
+	$base-font-size: 16px;
+  
+	font-size: $min-font-size;
+  
+	@media (max-width: $max-width) {
+	  $viewport-width: 100vw;
+	  $min-font-size-em: calc($min-font-size / $base-font-size);
+	  $max-font-size-em: calc($max-font-size / $base-font-size);
+  
+	  font-size: calc(#{$min-font-size-em}rem + (#{$max-font-size-em} - #{$min-font-size-em}) * ($viewport-width - 320px) / (#{$max-width} - 320));
+	  font-size: #{font-size}rem;
+	}
+}
+
+section.faq {
 	padding: 4% 10% 7% 10%;
-}
 
-.faq-h {
-	display: block;
-	text-align: center;
-}
-
-.faq-h i {
-	color: rgb(82, 41, 163);
-	font-size: 31px;
-	margin-bottom: 10px;
-}
-
-.faq-h h1 {
-	color: white;
-	letter-spacing: 1px;
-	margin-bottom: 40px;
+	&__header {
+		display: block;
+		text-align: center;
+		i {
+			color: rgb(82, 41, 163);
+			font-size: 31px;
+			margin-bottom: 10px;
+		}
+		h1 {
+			color: white;
+			letter-spacing: 1px;
+			margin-bottom: 40px;
+		}
+	}
 }
 
 .faq-box {
@@ -37,7 +50,7 @@
 
 .faq-box p {
 	color: #919ca7;
-	font-size: 16px;
+	@include responsive-font-size(1920px, 9px, 20px);
 	font-weight: lighter;
 	max-width: 450px;
 }
@@ -49,9 +62,7 @@
 }
 
 @media screen and (max-width: 1010px) {
-    .faq-box p {
-		max-width: 400px;
-	}
+
 }
 
 @media screen and (max-width: 880px) {
@@ -77,9 +88,6 @@
     .faq-box p {
 		max-width: 350px;
 	}
-	.faq-box p {
-		font-size: 15px;
-	}
 	.faq-box i {
 		font-size: 19px;
 	}
@@ -92,10 +100,6 @@
     .faq-h h1 {
 		font-size: 19px;
 	}
-	.faq-box p {
-		font-size: 13px;
-		max-width: 300px;
-	}
 	.faq-box i {
 		font-size: 17px;
 	}
@@ -107,10 +111,6 @@
 @media screen and (max-width: 345px) {
     .faq-h h1 {
 		font-size: 16px;
-	}
-	.faq-box p {
-		font-size: 12px;
-		max-width: 260px;
 	}
 	.faq-box i {
 		font-size: 16px;
