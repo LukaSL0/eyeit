@@ -1,4 +1,5 @@
 import './App.css';
+import './style/style.scss';
 import Line from './components/modules/line.js';
 import Header from './components/header.js';
 import Home from './components/home.js';
