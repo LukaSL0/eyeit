@@ -1,17 +1,15 @@
-import '../style/home.css';
-
 export default function Home() {
 
     return (
         <section>
             <div className="home" id="home">
-                <div className="box1">
+                <div className="home__box1">
                     <h1>Eye</h1>
                     <p>The first and the best FiveM Screenshare tool. Detecting cheats in the most efficient way that you ever seen.</p>
                     <a href="#example-link">See Scan Template</a>
-                    <a href="#purchase-link" className="eyeit-btn">Eye It <i className="fas fa-eye" aria-hidden="true"></i></a>
+                    <a href="#purchase-link" className="eye-btn">Eye It <i className="fas fa-eye" aria-hidden="true"></i></a>
                 </div>
-                <div className="box2">
+                <div className="home__box2">
                     <img src="assets/scanner.webp" alt="" />
                 </div>
             </div>

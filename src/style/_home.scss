@@ -1,0 +1,68 @@
+.home {
+	display: flex;
+	background-color: rgb(25, 25, 25);
+	padding: 0 13%;
+	@include responsive(880px) { display: block; padding: 0; }
+
+	&__box1 {
+		width: 100%;
+		margin-top: 35px;
+		@include responsive(880px) { padding: 0 13%; margin-top: 0; }
+
+		h1 {
+			@include fontSize(38px, 48px, 880px, 1920px);
+			font-weight: lighter;
+			color: rgb(82, 41, 163);
+			@include responsive(880px) { text-align: center; }
+		}
+		p {
+			max-width: 370px;
+			color: rgb(207, 207, 207);
+			margin: 20px 0;
+			@include fontSize(13px, 18px, 1010px, 1920px);
+			@include responsive(1200px) { max-width: 300px; }
+			@include responsive(1100px) { max-width: 250px; padding-right: 15px; }
+			@include responsive(880px) { text-align: center; max-width: none; }
+		}
+		a {
+			color: rgb(82, 41, 163);
+			border: solid 1px rgb(82, 41, 163);
+			transition: all 0.3s;
+			padding: 7px 12px;
+			border-radius: 4px;
+			margin-right: 5px;
+			@include fontSize(12px, 16px, 345px, 1920px);
+			@include responsive(910px) { padding: 5px 7px; }
+			&:hover {
+				background-color: rgb(82, 41, 163);
+				transition: all 0.3s;
+				color: white;
+			}
+		}
+		a.eye-btn{
+			color: white;
+			background-color: rgb(82, 41, 163);
+		}
+	}
+
+	&__box2 {
+		@include responsive(880px) { margin-top: 50px; padding-bottom: 30px; }
+
+		img {
+			border-radius: 8px;
+			box-shadow: 0 0 0.15em rgb(0 0 0);
+			width: 500px;
+			height: 290px;
+			@include responsive(880px) {
+				display: block;
+				margin-left: auto;
+				margin-right: auto;
+			}
+			@include responsive(600px) {
+				width: 100%;
+				max-width: 62%;
+				height: 180px;
+			}
+		}
+	}
+}
